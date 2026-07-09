@@ -50,6 +50,10 @@ Donde x₀ es la semilla, a es el multiplicador, c es el incremento y m es el m�
 
 Donde F⁻¹ es la función de distribución acumulada inversa.
 
+- Fórmula de Integración EstocásticaEn problemas matemáticos, como el cálculo de integrales complejas, el método evalúa la función f(x) en puntos aleatorios xi dentro de un dominio V:
+
+<img width="342" height="184" alt="image" src="https://github.com/user-attachments/assets/aa590b7c-7a16-414b-ba42-2a3c2d7616c6" />
+
 A continucon un jemplo:
 - Indica la función con la que quieres trabajar en la casilla de entrada.
 - Define el intervalo [a,b] en el que calcular el área moviendo los puntos correspondientes sobre el eje OX.
@@ -57,9 +61,3 @@ A continucon un jemplo:
 - Observa la aproximación obtenida del área.
 
   <img width="610" height="336" alt="image" src="https://github.com/user-attachments/assets/73ea5727-fbe7-4e9a-a15b-327aeaca549b" />
-
-- Fórmula de Integración EstocásticaEn problemas matemáticos, como el cálculo de integrales complejas, el método evalúa la función f(x) en puntos aleatorios xi dentro de un dominio V:
-  
-<img width="342" height="184" alt="image" src="https://github.com/user-attachments/assets/aa590b7c-7a16-414b-ba42-2a3c2d7616c6" />
-
-
