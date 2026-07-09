@@ -33,3 +33,33 @@ Documenta cada paso del proceso en una herramienta de gestión de proyectos como
 **4. Ejecutar las simulaciones.** El proceso anterior se repite miles de veces para producir una distribución completa de resultados. Cada iteración equivale a un escenario diferente. Cuantas más simulaciones ejecutes, más estable y fiable será la distribución resultante.
 
 **5. Analizar los resultados.** Con la distribución de resultados en mano, interpreta los datos: identifica el valor esperado, los percentiles clave y el rango de variación. Esta información permite comunicar el riesgo de forma objetiva y tomar decisiones fundamentadas sobre plazos, presupuestos o estrategias de contingencia.
+
+El método de Montecarlo no utiliza una única fórmula universal, sino que aplica técnicas estadísticas y muestreos aleatorios repetidos para aproximar resultados. Su enfoque central es la Ley de los Grandes Números, utilizando la media muestral como estimador del valor real
+
+<img width="830" height="189" alt="image" src="https://github.com/user-attachments/assets/d02888e0-8041-46ee-b5fe-31dadda4fe0e" />
+
+Para que este modelo funcione, se aplican varias fórmulas matemáticas fundamentales:
+- Generación de Números AleatoriosPara iniciar la simulación, se generan números pseudoaleatorios uniformemente distribuidos en el intervalo [0, 1). Una de las fórmulas matemáticas más comunes es el generador lineal congruencial:
+  
+<img width="524" height="69" alt="image" src="https://github.com/user-attachments/assets/cbc98137-8e8d-4a31-afea-d2581426c31f" />
+
+Donde x₀ es la semilla, a es el multiplicador, c es el incremento y m es el módulo.
+- Transformación a Distribuciones EspecíficasUna vez obtenidos los números aleatorios U = [0, 1), se convierten a la distribución de probabilidad de la variable que se desea estudiar (normal, binomial, etc.) utilizando el Método de la Transformada Inversa:
+  
+<img width="247" height="55" alt="image" src="https://github.com/user-attachments/assets/936df3e7-5b34-4b92-b4a9-a518fb0e117a" />
+
+Donde F⁻¹ es la función de distribución acumulada inversa.
+
+A continucon un jemplo:
+- Indica la función con la que quieres trabajar en la casilla de entrada.
+- Define el intervalo [a,b] en el que calcular el área moviendo los puntos correspondientes sobre el eje OX.
+- Desplaza el deslizador n para indicar el número de puntos aleatorios que deben generarse.
+- Observa la aproximación obtenida del área.
+
+  <img width="610" height="336" alt="image" src="https://github.com/user-attachments/assets/73ea5727-fbe7-4e9a-a15b-327aeaca549b" />
+
+- Fórmula de Integración EstocásticaEn problemas matemáticos, como el cálculo de integrales complejas, el método evalúa la función f(x) en puntos aleatorios xi dentro de un dominio V:
+  
+<img width="342" height="184" alt="image" src="https://github.com/user-attachments/assets/aa590b7c-7a16-414b-ba42-2a3c2d7616c6" />
+
+
